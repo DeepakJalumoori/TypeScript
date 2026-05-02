@@ -14,4 +14,19 @@ function getFood(orderedfood?: string) {
   return `serving default food item!`;
 }
 
-//Example
+//Example-3
+//WE CAN CREATE OUR OWN CUSTOM TYPES
+
+type chaiOrder = {
+  type: string;
+  sugar: number;
+};
+
+function isChaiOrder(obj: any): obj is chaiOrder {
+  return (
+    typeof obj === "object" &&
+    obj !== null &&
+    typeof obj.type === "string" &&
+    typeof obj.sugar === "number"
+  );
+}
