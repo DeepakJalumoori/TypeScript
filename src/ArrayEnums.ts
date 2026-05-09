@@ -44,3 +44,22 @@ enum Directions {
 const route = Directions.RIGHT;
 
 //Example-1:Enums will give default indexing
+enum Status {
+  PENDING = 100,
+  SERVED, //101
+  CANCELLED, //102
+}
+
+//Example-2:values should be same type(not necessary but considered to be the best practice)
+enum UserInfo {
+  ID = 1,
+  NAME = "Sameer",
+}
+
+//Example-3:we can use const with enum
+const enum Friends {
+  KARTHIKEYA,
+  SAMEER,
+  AKHIL,
+  SHASHANK,
+}
