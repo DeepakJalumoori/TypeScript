@@ -12,5 +12,7 @@
     "forceConsistentCasingInFileNames": true,
 
     "types": ["node"]
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["reactTs", "node_modules", "dist"]
 }
